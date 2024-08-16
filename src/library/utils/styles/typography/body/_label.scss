@@ -1,0 +1,17 @@
+@import '../../colors';
+
+$label-font-size: 16px;
+$label-font-weight: 700;
+$label-line-height: 24px;
+$label-color: $body-color;
+
+@mixin label {
+	font-size: $label-font-size;
+	font-weight: $label-font-weight;
+	line-height: $label-line-height;
+	color: $label-color;
+}
+
+.label, label {
+	@include label;
+}

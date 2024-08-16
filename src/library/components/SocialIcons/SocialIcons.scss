@@ -1,0 +1,26 @@
+@import "../../utils/styles/colors";
+
+.SocialIcons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	list-style: none;
+}
+
+.SocialIcons__Link {
+	display: block;
+	width: 64px;
+	height: 64px;
+	color: $page-bg;
+	background-color: $heading-color;
+	border-radius: 50%;
+	font-size: 2rem;
+	position: relative;
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

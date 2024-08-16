@@ -1,0 +1,23 @@
+@import "../../utils/styles/colors";
+@import "../../utils/styles/typography/typography";
+@import "../../utils/styles/container";
+
+$cover-bg-color: $surface-bg;
+
+.Cover {
+	padding: 8rem 1rem;
+	background-color: $cover-bg-color;
+}
+
+.Cover__Container {
+	@include container-styles;
+	text-align: center;
+
+	* {
+		margin-bottom: 1rem;
+	}
+
+	@include desktop {
+		padding: 0 11.25rem;
+	}
+}

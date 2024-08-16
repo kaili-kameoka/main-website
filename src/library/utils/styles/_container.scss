@@ -1,0 +1,29 @@
+$desktop-width: 1200px;
+
+@mixin desktop {
+	@media (min-width: $desktop-width) {
+		@content;
+	}
+}
+
+@mixin container-styles {
+	max-width: $desktop-width;
+	width: 100%;
+	padding: 16px;
+
+	@include desktop {
+		margin: 0 auto;
+	}
+}
+
+.container {
+	@include container-styles;
+}
+
+.container--row {
+	display: flex;
+
+	* {
+		flex: 1;
+	}
+}

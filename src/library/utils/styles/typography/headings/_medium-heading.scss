@@ -1,0 +1,17 @@
+@import '../../colors';
+
+$medium-heading-font-size: 32px;
+$medium-heading-font-weight: 700;
+$medium-heading-line-height: 40px;
+$medium-heading-color: $heading-color;
+
+@mixin medium-heading {
+	font-size: $medium-heading-font-size;
+	font-weight: $medium-heading-font-weight;
+	line-height: $medium-heading-line-height;
+	color: $medium-heading-color;
+}
+
+.medium-heading, h3 {
+	@include medium-heading
+}

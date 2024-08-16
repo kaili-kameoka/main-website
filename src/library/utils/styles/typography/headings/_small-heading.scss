@@ -1,0 +1,17 @@
+@import '../../colors';
+
+$small-heading-font-size: 28px;
+$small-heading-font-weight: 700;
+$small-heading-line-height: 32px;
+$small-heading-color: $heading-color;
+
+@mixin small-heading {
+	font-size: $small-heading-font-size;
+	font-weight: $small-heading-font-weight;
+	line-height: $small-heading-line-height;
+	color: $small-heading-color;
+}
+
+.small-heading, h4 {
+	@include small-heading;
+}

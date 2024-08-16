@@ -1,0 +1,17 @@
+@import '../../colors';
+
+$large-heading-font-size: 40px;
+$large-heading-font-weight: 700;
+$large-heading-line-height: 48px;
+$large-heading-color: $heading-color;
+
+ @mixin large-heading {
+	font-size: $large-heading-font-size;
+	font-weight: $large-heading-font-weight;
+	line-height: $large-heading-line-height;
+	 color: $large-heading-color;
+}
+
+.large-heading, h2 {
+	@include large-heading;
+}

@@ -1,0 +1,17 @@
+@import "../../utils/styles/colors";
+@import "../../utils/styles/typography/typography";
+
+.Button {
+	display: inline-block;
+	padding: 1rem 2rem;
+	@include label;
+	color: $body-inverted-color;
+}
+
+.Button--Primary {
+	background-color: $primary-action;
+}
+
+.Button--Secondary {
+	background-color: $secondary-action;
+}

@@ -1,0 +1,17 @@
+@import '../../colors';
+
+$paragraph-font-size: 16px;
+$paragraph-font-weight: 400;
+$paragraph-line-height: 24px;
+$paragraph-color: $body-color;
+
+@mixin paragraph {
+	font-size: $paragraph-font-size;
+	font-weight: $paragraph-font-weight;
+	line-height: $paragraph-line-height;
+	color: $paragraph-color;
+}
+
+.paragraph, p {
+	@include paragraph;
+}

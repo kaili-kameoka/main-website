@@ -1,0 +1,17 @@
+@import '../../colors';
+
+$title-font-size: 48px;
+$title-font-weight: 300;
+$title-line-height: 52px;
+$title-color: $heading-color;
+
+@mixin title {
+	font-size: $title-font-size;
+	font-weight: $title-font-weight;
+	line-height: $title-line-height;
+	color: $title-color;
+}
+
+.title, h1 {
+	@include title;
+}

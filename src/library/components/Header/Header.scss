@@ -1,0 +1,49 @@
+@import "../../utils/styles/typography/typography";
+@import "../../utils/styles/container";
+@import "../../utils/styles/colors";
+
+.Header__Container {
+	@include container-styles;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	@include desktop {
+		flex-direction: row;
+	justify-content: space-between;
+	}
+}
+
+.Header__Title {
+	@include large-heading;
+	text-align: center;
+
+	@include desktop {
+		text-align: left;
+	}
+}
+
+.Header__NavMenu {
+	display: flex;
+	list-style: none;
+}
+
+.Header__NavMenuItem:hover {
+	border-bottom-style: solid;
+	border-bottom-width: 0.25rem;
+	border-bottom-color: $border-color;
+}
+
+.Header__NavMenuItem--Active {
+	border-bottom-style: solid;
+	border-bottom-width: 0.25rem;
+	border-bottom-color: $label-color;
+}
+
+.Header__NavMenuItemLink {
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
+	@include label;
+}

@@ -1,0 +1,42 @@
+@import "../../utils/styles/container";
+@import "../../utils/styles/typography/typography";
+
+.AboutMe {
+	padding: 8rem 0;
+}
+
+.AboutMe__Container {
+	@include container-styles;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+
+	@include desktop {
+		flex-direction: row;
+	}
+}
+
+.AboutMe__Content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	@include desktop {
+		width: 60%;
+
+	}
+}
+
+.AboutMe__Title {
+	@include large-heading;
+}
+
+.AboutMe__AvatarContainer {
+	@include desktop {
+		width: 30%;
+	}
+}
+
+.AboutMe__Avatar {
+	border-radius: 50%;
+}
