@@ -11,13 +11,25 @@ $cover-bg-color: $surface-bg;
 
 .Cover__Container {
 	@include container-styles;
-	text-align: center;
+
 
 	* {
 		margin-bottom: 1rem;
 	}
 
-	@include desktop {
-		padding: 0 11.25rem;
+	&--Center {
+		text-align: center;
+		@include desktop {
+			padding: 0 11.25rem;
+		}
+
+	}
+
+	&--Left {
+		text-align: left;
+		@include desktop {
+			padding: 1rem;
+		}
+
 	}
 }

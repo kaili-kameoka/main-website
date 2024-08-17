@@ -1,4 +1,11 @@
+$tablet-width: 720px;
 $desktop-width: 1200px;
+
+@mixin tablet {
+	@media (min-width: $tablet-width) {
+		@content;
+	}
+}
 
 @mixin desktop {
 	@media (min-width: $desktop-width) {
@@ -18,12 +25,58 @@ $desktop-width: 1200px;
 
 .container {
 	@include container-styles;
+
+	&--body {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		@include desktop {
+			flex-direction: row;
+		}
+
+	}
+
+	&__Content {
+
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		@include desktop {
+			width: 70%;
+		}
+
+		&--Listing {
+			gap: 4rem;
+		}
+
+	}
+
+	&__Sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+
+		@include desktop {
+			width: 30%;
+		}
+	}
+
 }
 
-.container--row {
+
+.container--Row {
 	display: flex;
 
 	* {
 		flex: 1;
 	}
+
+
+}
+
+.containerSection {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
 }

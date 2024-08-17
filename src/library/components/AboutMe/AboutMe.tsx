@@ -15,7 +15,8 @@ function AboutMe({children, img: {src, alt}}: AboutMeProps) {
 						{children}
 					</div>
 					<div className="AboutMe__AvatarContainer">
-						<Image src={src} alt={alt}  className='AboutMe__Avatar' width={512} height={512} />
+
+						<Image src={src} alt={alt}  className='AboutMe__Avatar' width={400} height={400} />
 					</div>
 				</div>
 			</section>

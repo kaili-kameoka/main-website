@@ -13,7 +13,7 @@ import AboutMe from "@/library/components/AboutMe/AboutMe";
 export default function Home() {
   return (
 			<>
-				<Cover>
+				<Cover alignment={'Center'}>
 					<h1 className="title">{HERO_COVER_TITLE}</h1>
 					<p className="paragraph">{HERO_COVER_BODY}</p>
 					<Button url={HERO_COVER_CTA_URL} color={'Primary'}>{HERO_COVER_CTA_TEXT}</Button>

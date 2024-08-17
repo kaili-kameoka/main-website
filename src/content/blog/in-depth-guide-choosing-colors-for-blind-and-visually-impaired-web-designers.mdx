@@ -1,0 +1,142 @@
+export const metadata = {
+	title: "In-Depth Guide: Choosing Colors for Blind and Visually Impaired Web Designers",
+	excerpt: "Learn how to choose and customize color palettes for web design, with a focus on accessibility for visually impaired designers. This in-depth guide covers essential tools, techniques, and a practical step-by-step tutorial to create beautiful, accessible designs.",
+	excerpt: "Learn how to choose and customize color palettes for web design, with a focus on accessibility for visually impaired designers. This in-depth guide covers essential tools, techniques, and a practical step-by-step tutorial to create beautiful, accessible designs.",
+	createdAt: '2024-08-12 @ 10:00 AM',
+	lastUpdatedAt: '2024-08-14 12:00 PM'
+}
+
+Choosing colors can be challenging for designers who are blind or visually impaired. Some might be color blind, while others may not see colors at all. Even if you can see color, the vast array of options can be overwhelming. In this guide, I’ll share how I select colors for my design projects, introduce you to three places where you can find ready-made color palettes, explain how computers interpret colors, and show you how to generate your own color sets. By the end, you'll have a solid understanding of how to choose and tweak colors that work well together.
+
+## Choosing Colors for a Design Project
+
+When starting a design project, I begin by selecting two colors: a primary color, which is often from the rainbow spectrum or the brand’s color palette, and a secondary neutral color. The primary color of the site should match the primary color of the brand, ensuring consistency across the brand's identity and its website. This connection helps make the site feel like an integral part of the brand.
+
+The secondary color is usually a neutral shade like gray or brown, but I often consider the warmth or coolness of the primary color. For example, if the primary color is warm (like red or orange), I might choose a cool gray as the secondary color. Conversely, if the primary color is cool (like blue or green), I might opt for a warm gray or brown. This choice can also depend on the brand’s overall aesthetic. I’ve worked on projects where a warm brown was selected as a secondary color to complement a warm primary color chosen from the client’s logo.
+
+## Finding Color Palettes
+
+Having a system for using colors is helpful, but choosing those initial colors can be tough. Luckily, there are pre-existing color palettes that are free to use.
+
+### Tailwind CSS Default Colors
+
+One of my favorite resources is the Tailwind CSS documentation, which offers a large set of default colors—5 neutral grays and 17 rainbow colors, each with 11 shades. I usually pick one rainbow color as my primary and a neutral gray as my secondary.
+
+I like Tailwind CSS because the color sets are predefined, so I don’t need to manually choose each shade from 50 to 900. It’s as simple as clicking on a colored square to copy the hex code and pasting it into Figma.
+
+Many CSS frameworks use a similar 50-900 color scale, but I prefer Tailwind CSS for its wider selection. An alternative to Tailwind CSS is Bootstrap, which also offers a similar color setup.
+
+### W3Schools HTML5 Color Names
+
+There are 147 named colors on the web, like `red`, `green`, and `blue`, and more descriptive ones like `firebrick`, `forestgreen`, and `deepskyblue`.
+
+You can find these on the W3Schools website, where each color is listed with its name and hex code. Clicking the hex code takes you to a page with more details, including RGB values and text color suggestions.
+
+I mainly use the hex code, which I copy into an app like Smart Swatches to generate a 10-color scale. Just like with Tailwind CSS, I can click on a square to copy the hex code and paste it into Figma.
+
+### Adobe Color
+
+If you’re unsure about your primary and secondary colors, Adobe Color can help. The Explore tab features user-submitted color palettes based on images, often containing shades of the same color. Choose two distinct colors, copy their hex codes into Smart Swatches, and generate your color set.
+
+## Generating Color Sets
+
+You don’t need an app like Smart Swatches to generate color sets—you can do it yourself. Here’s how:
+
+1. **Create the Squares**: Start by creating 10 squares for your primary color and 10 for your secondary color, all placed on a white background. Arrange them in a line and label each square from 50 to 900, increasing by 100 after 50.
+
+2. **Find the Base Color**: Identify the 500 color for your primary color. This will remain unchanged.
+
+3. **Adjust Opacity**: For the 400 color, reduce the opacity of the 500 color by 10-20%. Continue reducing the opacity by an increasing amount as you move to 300, 200, and down to 50, ensuring you have a smooth gradient from the base color to almost white. Once you have matched the color using the eyedropper tool, remember to change the opacity of the 400 square back to 100% to see the correct color.
+
+4. **Match the Colors**: Create a shape (like a circle) and use the eyedropper tool to match its color to the adjusted opacity of the 400 square. Then, apply this color to the 400 square. Repeat this process for all squares down to 50.
+
+5. **Switch to Dark Background**: Change the background color to black and repeat the process for colors 600 through 900, adjusting the opacity upward this time to darken the color.
+
+6. **Repeat for Both Color Sets**: Follow the same steps to generate both primary and secondary color sets.
+
+While this manual process is helpful, especially if you’re working with predefined brand colors for a client, it can be time-consuming. Using a tool like Smart Swatches is much more efficient.
+
+## How Computers Interpret Colors
+
+Throughout this article, I’ve mentioned hex codes. To understand them, it helps to know how computers think about color.
+
+In school, you were likely taught that the primary colors are red, yellow, and blue, which combine to create black. However, computers work differently. They start with a black screen and combine red, green, and blue (RGB) to produce white.
+
+Each color on your screen is a combination of these three primary colors. This system is called the RGB model, where each color component is a number between 0 and 255. For example, pure red is written as `rgb(255, 0, 0)`.
+
+Hex codes are a shorthand for RGB notation. Hexadecimal, a base-16 counting system, uses numbers 0-9 and letters A-F. A hexadecimal color consists of six digits: the first two for red, the next two for green, and the last two for blue. So red would be written as `#FF0000`.
+
+Hexadecimal is useful but not always intuitive for choosing colors. The HSL model (Hue, Saturation, Lightness) offers a more visual approach.
+
+- **Hue** represents a color on the color wheel, with numbers ranging from 0 to 360 degrees.
+- **Saturation** is the intensity of the color, from 0% (gray) to 100% (full color).
+- **Lightness** is the brightness, from 0% (black) to 100% (white).
+
+I like using the HSL model because I can select a hue and adjust its saturation and lightness. For instance, for a base blue color, I might choose a hue in the 200s, with saturation in the 90s and lightness in the 70s or 80s.
+
+## Special Considerations for Visually Impaired Designers
+
+Choosing colors for a design project can be particularly challenging for visually impaired designers. As someone who is visually impaired, I understand that coming up with a color palette from scratch can be a daunting task. Often, it’s not just about seeing the colors but also understanding how they work together in a way that makes sense both aesthetically and functionally.
+
+### Adapting the Design Process
+
+One of the key adaptations I’ve made in my design process is to rely heavily on understanding colors from a computer’s perspective using numerical values. This approach allows me to make more informed decisions without needing to distinguish between colors visually. For instance, tools like Figma and Tailwind CSS make it easier to select and manage colors based on their hex codes or HSL values, rather than relying solely on visual cues.
+
+### Overcoming Challenges with Color Perception
+
+It’s not always easy to pinpoint the exact color I want, especially when some colors look so similar that I can’t tell the difference between them. Through trial and error, I’ve developed methods to work around this challenge. For example, I often start with pre-existing color palettes or use tools that suggest complementary colors, reducing the guesswork involved in color selection. This not only saves time but also ensures that my designs maintain good contrast and readability.
+
+### Using Numerical Systems for Color Selection
+
+Understanding colors as numerical values, such as hex codes or HSL values, can simplify the process of choosing and adjusting colors. This approach can be particularly useful for visually impaired designers who may find it difficult to differentiate between similar shades. By focusing on the numbers, you can achieve precise control over the colors in your design, ensuring that they meet both aesthetic and accessibility standards.
+
+### Leveraging Tools and Community Support
+
+While tools like Smart Swatches and Tailwind CSS are invaluable, it’s also important to seek feedback from others, whether they are sighted colleagues or fellow designers with visual impairments. Collaboration and peer feedback can provide valuable insights, helping you refine your color choices and ensure that your designs are accessible to all users.
+
+## Accessibility Considerations
+
+When assigning roles to colors, I aim to use the most extreme ends of the color spectrum—the lightest and darkest shades. This approach ensures that the colors I select provide the necessary contrast for readability. For example, while deciding the background and text colors for buttons, I often face a challenge because button backgrounds typically fall in the middle of the lightness spectrum. Colors like
+
+yellow and orange tend to be lighter, so I have to carefully choose a contrasting text color that is readable yet visually appealing. For other colors, I rely on my best judgment, always keeping accessibility in mind.
+
+## Step-by-Step Tutorial: Choosing Colors for a Taco Truck Website Design
+
+Now that we’ve covered the essential concepts and tools, let’s apply what we’ve learned in a real-world example. I’ll walk you through a step-by-step process using a moodboard I created for a Taco Truck website design. This example will help solidify your understanding of color selection and application in design projects.
+
+### Step 1: Selecting Primary and Secondary Colors
+
+The reddish-pink color will serve as our primary color because it’s bright and will stand out on the page, whether we opt for a dark or light theme. The bluish-green color, being cool and comfortable, is an excellent choice for a secondary color, especially for backgrounds and text.
+
+### Step 2: Setting Up the Figma File
+
+Start by creating a new design file in Figma. In this file, create two columns of 10 squares each, with each square sized at 16x16 pixels. You can optionally set up an auto-layout for each column and label them "Primary" and "Secondary." Inside the auto-layout, label each square with numbers ranging from 50 to 900. This setup will allow us to organize and manipulate the color shades systematically.
+
+### Step 3: Applying the Primary Color
+
+Next, visit the Tailwind CSS [Customizing Colors page](https://tailwindcss.com/docs/customizing-colors) and locate the row labeled "Pink." Copy the hex codes for each shade and apply them to the squares in the "Primary" column in Figma. Skip the 50 color in the Tailwind CSS documentation and start with the 100 color, placing it in the 50 square in Figma. Continue filling in the rest of the squares up to 900, creating a smooth gradient of pink shades.
+
+### Step 4: Adjusting the Secondary Color
+
+Now, return to the Tailwind CSS documentation and find the "Emerald" color. While the 500 emerald color is visually appealing, it is too saturated to work harmoniously with the pink due to insufficient contrast. Copy the 500 emerald color into one of the squares in the "Secondary" column in Figma. Click on the color swatch and change the color mode to HSL. Reduce the saturation by 24%, then copy the new hex code. Open a new browser tab for [Smart Swatches](https://smartswatches.com) and paste the hex code into the input field. Copy the colors from the first "Base" row and apply them to the squares in the "Secondary" column, replacing the test square used earlier.
+
+### Step 5: Fine-Tuning the Color Scales
+
+Upon reviewing the two columns, you’ll notice that the secondary colors, particularly in the 900 square, appear much darker than their counterparts in the primary column. For consistency, adjust the lightness of some secondary colors. For instance, you can modify the lightness property in the HSL settings for better alignment:
+
+- **Secondary 900**: Lightness 20%
+- **Secondary 800**: Lightness 30%
+- **Secondary 700**: Lightness 40%
+- **Secondary 600**: Lightness 50%
+
+This adjustment ensures that your color scales are visually cohesive and easier to work with when designing components.
+
+### Step 6: Finalizing the Color Setup
+
+With the colors for the Taco Truck design project set up, you can now proceed to use Figma variables or styles, depending on your workflow. This structured approach not only streamlines the design process but also ensures that your colors are consistent and harmonious throughout the project.
+
+## Conclusion
+
+Choosing the right colors for your design projects, especially when working with visually impaired designers, is both an art and a science. By understanding how colors interact, utilizing the right tools, and applying systematic approaches, you can create visually appealing and accessible designs. Whether you’re using pre-existing color palettes, generating your own color sets, or adjusting colors for contrast and readability, the key is to ensure consistency with the brand and maintain accessibility for all users.
+
+By following the step-by-step tutorial, you now have a practical method to apply these concepts to real-world projects. With these skills, you’re well-equipped to tackle any design challenge, ensuring your work is both beautiful and accessible.
