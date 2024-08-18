@@ -9,9 +9,14 @@
 	align-items: center;
 	gap: 1rem;
 
+	a {
+		color: $heading-color;
+		text-decoration: navajowhite;
+	}
+
 	@include desktop {
 		flex-direction: row;
-	justify-content: space-between;
+		justify-content: space-between;
 	}
 }
 
