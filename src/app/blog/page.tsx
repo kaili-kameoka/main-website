@@ -5,7 +5,7 @@ import Card from "@/library/components/Card/Card";
 import Button from "@/library/components/Button/Button";
 import formatDateString from "@/library/utils/formatDateString";
 
-async function Page(props) {
+async function Page() {
 	const posts = await getAllBlogMeta();
 
 	return (
