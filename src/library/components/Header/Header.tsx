@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.scss'
 import {MAIN_NAV_MENU_ITEMS, SITE_TITLE} from "@/library/utils/content";
-import Navigation from "@/library/components/Navigation/Navigation.tsx";
+import Navigation from "@/library/components/Navigation/Navigation";
 import Link from "next/link";
 
 function Header() {

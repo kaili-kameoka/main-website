@@ -23,7 +23,7 @@ export default function RootLayout({children}: Readonly<{
 	return (
 			<html lang="en">
 			<body className={poppins.className}>
-			<Header navMenuItems={MAIN_NAV_MENU_ITEMS}/>
+			<Header/>
 			{children}
 			<Footer />
 			</body>

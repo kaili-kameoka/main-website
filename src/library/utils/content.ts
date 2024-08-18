@@ -1,4 +1,5 @@
 import {NavMenuItem} from "@/library/components/Navigation/types";
+import {SocialLinks} from "@/library/components/SocialIcons/types";
 
 export const MAIN_NAV_MENU_ITEMS: NavMenuItem[] = [
 	{url: '/', text: 'Home'},
@@ -10,7 +11,7 @@ export const SITE_TITLE = "Kaili Kameoka";
 
 export const FOOTER__COPYRIGHT = '© Kaili Kameoka 2024'
 
-export const SOCIAL_LINKS = {
+export const SOCIAL_LINKS: SocialLinks = {
 	gitHub: {
 		url: 'https://github.com/kaili-kameoka',
 		icon: 'github'

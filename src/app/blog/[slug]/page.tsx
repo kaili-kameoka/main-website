@@ -7,7 +7,7 @@ import BlogContentBySlug from "@/library/content/blog/BlogContentBySlug/BlogCont
 import formatDateString from "@/library/utils/formatDateString";
 import {BlogMeta} from "@/library/content/blog/types";
 
-async function Page({params: {slug}}) {
+async function Page({params: {slug}}: BlogProps) {
 	const {title, lastUpdatedAt} = await getBlogMetaBySlug(slug);
 
 	return (

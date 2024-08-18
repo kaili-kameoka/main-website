@@ -18,7 +18,7 @@ export default function Home() {
 					<p className="paragraph">{HERO_COVER_BODY}</p>
 					<Button url={HERO_COVER_CTA_URL} color={'Primary'}>{HERO_COVER_CTA_TEXT}</Button>
 				</Cover>
-				<AboutMe img={{ src: avatar, alt: 'Kaili Kameoka'}} >
+				<AboutMe img={{ src: avatar.src, alt: 'Kaili Kameoka'}} >
 					{ABOUT_ME_CONTENT}
 				</AboutMe>
 			</>
