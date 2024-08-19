@@ -3,7 +3,7 @@ import Cover from "@/library/components/Cover/Cover";
 import getAllBlogMeta from "@/library/content/blog/ggetAllBlogMeta";
 import Card from "@/library/components/Card/Card";
 import Button from "@/library/components/Button/Button";
-import formatDateString from "@/library/utils/formatDateString";
+import formatDateTimeString from "@/library/utils/formatDateTimeString";
 
 async function Page() {
 	const posts = await getAllBlogMeta();
@@ -19,7 +19,7 @@ async function Page() {
 							{posts.map(post => (
 									<Card key={post.createdAt}>
 										<h2>{post.title}</h2>
-										<p><span className={'label'}>Last Updated:</span> {formatDateString(post.lastUpdatedAt)}</p>
+										<p><span className={'label'}>Last Updated:</span> {formatDateTimeString(post.lastUpdatedAt)}</p>
 										<p>{post.excerpt}</p>
 										<p>
 											<Button color={'Secondary'} url={`/blog/${post.slug}`}>Read More</Button>

@@ -4,7 +4,7 @@ import type {Metadata} from 'next'
 import {BlogProps} from "@/app/blog/[slug]/types";
 import getBlogMetaBySlug from "@/library/content/blog/getBlogMetaBySlug";
 import BlogContentBySlug from "@/library/content/blog/BlogContentBySlug/BlogContentBySlug";
-import formatDateString from "@/library/utils/formatDateString";
+import formatDateTimeString from "@/library/utils/formatDateTimeString";
 import {BlogMeta} from "@/library/content/blog/types";
 
 async function Page({params: {slug}}: BlogProps) {
@@ -14,7 +14,7 @@ async function Page({params: {slug}}: BlogProps) {
 			<>
 				<Cover>
 					<h1>{title}</h1>
-					<p>Last Updated: {formatDateString(lastUpdatedAt)}</p>
+					<p>Last Updated: {formatDateTimeString(lastUpdatedAt)}</p>
 				</Cover>
 				<main className={'containerSection {'}>
 					<div className={'container container--body'}>

@@ -3,9 +3,9 @@ import {Poppins} from "next/font/google";
 import "./globals.scss";
 import Header from '../library/components/Header/Header';
 import Footer from "@/library/components/Footer/Footer";
+import 'devicon/devicon.min.css';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import {MAIN_NAV_MENU_ITEMS} from "@/library/utils/content";
 
 const poppins = Poppins({
 	subsets: ["latin"],

@@ -1,8 +1,8 @@
-import React from 'react';
-import {CoverProps} from "@/library/components/Cover/types";
+import React, {FC} from 'react';
+import {CoverMetaProps, CoverProps, CoverType} from "@/library/components/Cover/types";
 import './Cover.scss';
 
-function Cover({children, alignment = 'Left'}: CoverProps) {
+const Cover = function({children, alignment = 'Left'}: CoverProps) {
 	return (
 			<section className="Cover">
 				<div className={`Cover__Container Cover__Container--${alignment}`}>
@@ -11,6 +11,16 @@ function Cover({children, alignment = 'Left'}: CoverProps) {
 
 			</section>
 	);
+} as CoverType;
+
+const Meta: FC<CoverMetaProps> = function ({children}: CoverMetaProps) {
+	return (
+			<div className="Cover__Meta">
+				{children}
+			</div>
+	)
 }
+
+Cover.Meta = Meta;
 
 export default Cover;

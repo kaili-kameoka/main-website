@@ -13,7 +13,7 @@ $cover-bg-color: $surface-bg;
 	@include container-styles;
 
 
-	* {
+	& > * {
 		margin-bottom: 1rem;
 	}
 
@@ -32,4 +32,10 @@ $cover-bg-color: $surface-bg;
 		}
 
 	}
+}
+
+.Cover__Meta {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
